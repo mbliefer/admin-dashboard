@@ -26,11 +26,23 @@ nav {
     color: aliceblue;
 }
 
+nav h1 {
+    text-align: center;
+    margin: 40px;
+}
+
 nav ul {
     list-style: none;
     /* list-style-image: url("images/home.svg"); */
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(10, 40px);
+    align-items: center;
+    font-weight: bold;
+}
+
+li:hover, img:hover, .btn {
+    cursor: pointer;
 }
 
 .nav-img {
